@@ -2,7 +2,7 @@ remote_theme: mmistakes/so-simple-theme
 
 title: AnantaDurgaPrasad
 email: anantadurgaprasad@gmail.com
-description: "This is DevOps Blog Site"
+description: "My Tech Learnings Blog"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://anantadurgaprasad.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
