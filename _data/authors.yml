@@ -1,16 +1,12 @@
-# Sample Authors
-# Remove file or replace with your own
-
-Billy Rick:
-  name: Billy Rick
-  picture: /images/bio-photo-2.jpg
-  twitter: "@billyrick"
+Ananta Durga Prasad:
+  name: Ananta Durga Prasad
+  picture: /images/michael-rose-photo.jpg
+  email:
+  twitter: mmistakes
   links:
     - title: Twitter
-      url: https://twitter.com/billyrick
+      url: https://twitter.com/312Ananta
       icon: fab fa-twitter-square
-
-Cornelius Fiddlebone:
-  name: Cornelius Fiddlebone
-  picture: /images/bio-photo.jpg
-  twitter: corneliusfiddlebone
+    - title: GitHub
+      url: https://github.com/anantadurgaprasad
+      icon: fab fa-github-square
