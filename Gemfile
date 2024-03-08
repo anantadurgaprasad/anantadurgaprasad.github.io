@@ -10,6 +10,7 @@ source "https://rubygems.org"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 
+gem 'webrick'
 
 gem "tzinfo-data"
 #gem "jekyll-theme-so-simple", "~> 3.2.0"
