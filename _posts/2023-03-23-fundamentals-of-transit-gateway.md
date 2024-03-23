@@ -40,3 +40,33 @@ AWS Transit Gateway route tables play a critical role in directing traffic betwe
 **Route Propagation in Transit Gateway**
 Route propagation in AWS Transit Gateway refers to the automatic updating of route tables when new routes are added.  The dynamic nature of route propagation minimizes the administrative overhead associated with manual route updates, making network management more efficient and error-prone. 
 
+
+**One of the most know architectures with Transit Gateway is  2 Transit Gateways with peering attachment between them allowing the VPCs on either side of Transit Gateway to communicate.**
+
+#### To create this architecture follow the below steps : 
+
+**prerequistites :**
+
+Note - Since we don't have multiple aws accounts we will create 2 transit gateways within the same aws account. I created both of them in the same region for convience but they can be any accounts. 
+
+2 VPC's each with a route table and associated subnets. 
+
+*  Create 2 transit gateways which mirror the 2 gateways we have in architecture 
+``` project1 vpc is associated with transitgateway region1 and project2 vpc with transitgateway region1```
+
+**Note - As a Best Practice it is always suggested to disable route table association and route table propagation when creating Transit Gateway . This ensure granular control.**
+
+*  Create Transit Gateway VPC attachment with each VPC and their respective transit gateways.
+
+
+*  Create a Transit Gateway peering attachment betweent the transit gateways. TO achieve this one of the transit gateway has to request attachment with another transit gateway , only if the other gateway accepts the attachment your attachment will be available else it will be in pending state.
+
+* As we disabled auto route table association , A route table has to be created for each of the attachment. This route table will dictate routing of traffic directed at the attachment. 
+
+**Note - We can associate one route table with any number of attachment but it's a best practice to associate one route table for each of the attachment.**
+
+ * Creating Route Table for each VPC attachment and for each of the peering attachment 
+
+* Updating the Route Tables of the VPC to direct traffic to transit gateway attachment 
+
+[Scribe Link](https://scribehow.com/shared/Create_Transit_Gateway_with_Peering_between_Regions__S3WIwG37QjyHfSM2fWV7Kw)
