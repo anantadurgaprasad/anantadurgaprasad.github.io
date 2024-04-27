@@ -49,25 +49,8 @@ We create jenkins job in the usual way.we use Artifactory plugin installed to us
 
 Useful Links :
 
-[
-
-Artifactory
------------
-
-### This plugin allows your build jobs to deploy artifacts and resolve dependencies to and from Artifactory, and then have…
-
-plugins.jenkins.io
-
-](https://plugins.jenkins.io/artifactory/?source=post_page-----71ee77d812e3--------------------------------)[
-
-project-examples/jenkins-examples/pipeline-examples/declarative-examples at master ·…
--------------------------------------------------------------------------------------
-
-### The examples here are meant to help you get started working with Artifactory in your Jenkins pipeline scripts. To set…
-
-github.com
-
-](https://github.com/jfrog/project-examples/tree/master/jenkins-examples/pipeline-examples/declarative-examples?source=post_page-----71ee77d812e3--------------------------------)
+[Jenkins plugin Documentation](https://plugins.jenkins.io/artifactory/?source=post_page-----71ee77d812e3--------------------------------)
+[jenkinsfile examples](https://github.com/jfrog/project-examples/tree/master/jenkins-examples/pipeline-examples/declarative-examples?source=post_page-----71ee77d812e3--------------------------------)
 
 The jfrog+jenkins pipeline is pretty standard and almost same as the one mentioned in the github examples.
 

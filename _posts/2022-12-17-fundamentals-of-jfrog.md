@@ -5,23 +5,14 @@ categories: jfrog
 tags: jfrog  
 ---
 
-
-
 This article is part of Jfrog series:
 
 1.  Fundamentals of Jfrog
 2.  [Demo maven project with Jfrog + jenkins pipeline integration.](https://medium.com/@anantadurgaprasadar/maven-project-with-jfrog-artifactory-jenkins-pipeline-integration-71ee77d812e3)
 3.  Configuring other project to use jfrog Artifact.
 
-In this article we are discuss the following :
+{% include toc %}
 
-1.  What is Jfrog Artifactory ?
-2.  Jfrog Trial account creation
-3.  Jfrog Fundamentals —
-
-*   Types of repositories
-*   Creating projects to organize repo — this is present only in pro version.
-*   Create a maven project repo.
 
 What is Jfrog Artifactory?
 --------------------------
@@ -77,17 +68,17 @@ Ex . If a project is configured to look in virtual repository to resolve depende
 Click on quick setup → select the project type (maven) → give the repo prefix and click create .  
 Here we see all the repositories required for our project being created.
 
-Local Repositories — to store the build artifacts for dev and prod env.
+**Local Repositories** — to store the build artifacts for dev and prod env.
 
-Remote Repositories — to resolve dependencies
+**Remote Repositories** — to resolve dependencies
 
-Virtual Repositories — to be used by other projects which has this project as dependency .
+**Virtual Repositories** — to be used by other projects which has this project as dependency .
 
-Virtual Repositories has following repos :
+**Virtual Repositories has following repos :**
 
-trial-libs-snapshot - trial-libs-snapshot-local + trial-maven-remote
+**trial-libs-snapshot** - trial-libs-snapshot-local + trial-maven-remote
 
-trial-libs-release - trial-libs-release-local + trial-maven-remote
+**trial-libs-release** - trial-libs-release-local + trial-maven-remote
 
 In the next project we will build a jenkins pipeline to build and store artifact using Jfrog Artifactory.
 

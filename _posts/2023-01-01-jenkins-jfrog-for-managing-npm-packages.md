@@ -2,7 +2,7 @@
 title: "Jenkins+Jfrog for managing Npm packages"
 layout: post
 categories: jfrog
-tags: jfrog  
+tags: jfrog  npm
 ---
 
 In this post, I’m going to discuss about jenkins pipeline script for jfrog.
